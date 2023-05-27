@@ -1,7 +1,8 @@
 import Head from 'next/head';
+import Home from './home';
 
 
-export default function Home() {
+export default function Index() {
   return (
 <div className="">
   <Head>
@@ -10,6 +11,8 @@ export default function Home() {
 
 <link rel="icon" href="/favicon.ico" />
 </Head>
+<Home/>
+
 <h1 className='text-center' >Food Ordering</h1>
 </div>
   )
