@@ -1,0 +1,1 @@
+components/layout/Footer.jsx
