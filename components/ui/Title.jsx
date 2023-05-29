@@ -1,8 +1,7 @@
 
-function Title() {
-  return (
-    <div>Title</div>
-  )
-}
-
-export default Title
+const Title = ({children ,addClass}) => {
+    return   <div className={`${addClass}`} >{children}</div>
+    
+  }
+  
+  export default Title
