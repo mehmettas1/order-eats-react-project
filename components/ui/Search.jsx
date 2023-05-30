@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import OutsideClickHandler from 'react-outside-click-handler';
 import Title from "../ui/Title";
 
@@ -9,6 +10,18 @@ const Search = ({setIsSearchModal}) => {
    <div className="w-full h-full grid place-content-center">
    <div className="relative w-[37rem] h-[37rem] z-50 bg-white border-2">
       <Title addClass="text-5xl text-center" >Search</Title>
+      <input type="text" placeholder='Search ...' className='border w-full'  />
+      <div className="">
+        <ul>
+            <li className='flex items-center justify-between'>
+                <div className="relative ">
+                    <img src="/images/f1.png" width={48} height={48} alt="" layout="fill" />
+                </div>
+                    <span>Good Pizza</span>
+                    <span>$10</span>
+            </li>
+        </ul>
+      </div>
     </div>
    </div>
   </OutsideClickHandler></div>
