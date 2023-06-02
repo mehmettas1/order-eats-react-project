@@ -11,7 +11,7 @@ const MenuItem = () => {
     <div className="text-white p-6 ">
         <h4 className='text-xl font-semibold'>Delicious Pizza</h4>
         <p className=" text-[15px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolores harum officia autem doloremque .</p>
-        <div className="flex justify-between ">
+        <div className="flex justify-between mt-4">
 
         <span className='text-white' >$20</span>
         <button className=" btn-primary h-10 w-10 rounded-full p-0  grid place-content-center"><RiShoppingCart2Fill/></button>
