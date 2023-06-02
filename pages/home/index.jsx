@@ -1,3 +1,4 @@
+import MenuWrapper from "@/components/product/MenuWrapper";
 import Campaigns from "../../components/Campaigns";
 import Carousel from "../../components/Carousel";
 
@@ -8,6 +9,7 @@ const Index = () => {
     <div>
 <Carousel/>
 <Campaigns/>
+<MenuWrapper/>
     </div>
   );
 };
