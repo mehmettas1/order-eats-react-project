@@ -9,7 +9,7 @@ const Header = () => {
   const [isMenuModal, setIsMenuModal] = useState(false);
 
   return (
-    <div className="h-[5.5rem] bg-secondary">
+    <div className="h-[5.5rem] bg-secondary w-4">
       <div className="container mx-auto text-white flex justify-between items-center h-full">
         <Logo />
         <nav
