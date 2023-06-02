@@ -1,4 +1,5 @@
-import Carousel from "@/components/Carousel";
+import Campaigns from "../../components/Campaigns";
+import Carousel from "../../components/Carousel";
 
 
 
@@ -6,6 +7,7 @@ const Index = () => {
   return (
     <div>
 <Carousel/>
+<Campaigns/>
     </div>
   );
 };
