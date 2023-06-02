@@ -16,3 +16,15 @@ body {
 .btn-primary {
   @apply text-white px-[30px] py-[8px] rounded-3xl bg-primary cursor-pointer hover:opacity-70 transition-all;
 }
+
+.slick-dots{
+  @apply !flex w-full justify-start  
+}
+
+.slick-dots .slick-active div {
+  @apply bg-primary scale-150
+}
+
+.slick-dots  div{
+  @apply !m-4 !mt-10
+}
