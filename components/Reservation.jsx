@@ -2,17 +2,18 @@ import React from "react";
 import Input from "./form/Input";
 import Title from "./ui/Title";
 import { useFormik } from "formik";
+import { rezarvatipSchema } from "@/schema/reservation";
 
 const Reservation = () => {
 
 const onSubmit = async(values,actions) =>{
     await new Promise((resolve)=> setTimeout(resolve,400));
-    actions.reset();
+    actions.resetForm();
 }
 
 
 
-  const {values,handleSubmit,handleChange} = useFormik({
+  const {values,errors, handleSubmit,handleChange} = useFormik({
     initialValues: {
       fullName: "",
       phoneNumber: "",
@@ -21,6 +22,7 @@ const onSubmit = async(values,actions) =>{
       date: "",
     },
     onSubmit,
+    validationSchema: rezarvatipSchema,
   });
 
   const inputs = [
@@ -30,6 +32,7 @@ const onSubmit = async(values,actions) =>{
       type: "text",
       placeholder: "Your Full Name",
       value: values.fullName,
+      errorMessage:errors.FullName,
     },
     {
       id: 2,
@@ -37,6 +40,7 @@ const onSubmit = async(values,actions) =>{
       type: "number",
       placeholder: "Your Phone Number",
       value: values.phoneNumber,
+      
     },
     {
       id: 3,
