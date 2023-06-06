@@ -2,8 +2,9 @@ import Image from "next/image";
 import React from "react";
 
 const CustomerItem = ({imgSrc}) => {
+    
   return (
-    <div className="mt-5">
+    <div className="mt-5 mx-4">
       <div className="p-6 bg-secondary text-white rounded-[5px]">
         <p className="">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus est
