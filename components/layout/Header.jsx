@@ -5,12 +5,12 @@ import Search from "../ui/Search";
 import { GiHamburgerMenu, GiCancel } from "react-icons/gi";
 import { useRouter } from "next/router";
 import Link from "next/link";
+
 const Header = () => {
   const [isSearchModal, setIsSearchModal] = useState(false);
   const [isMenuModal, setIsMenuModal] = useState(false);
 
   const router = useRouter();
-
 
   return (
     <div
@@ -49,23 +49,27 @@ const Header = () => {
           )}
         </nav>
         <div className="flex gap-x-4 items-center">
-          <Link href="/auth/Login">
-            <FaUserAlt className="hover:text-primary transition-all cursor-pointer" />
+          <Link href="/auth/login">
+            <span>
+              <FaUserAlt className="hover:text-primary transition-all cursor-pointer" />
+            </span>
           </Link>
           <Link href="/cart">
-            <FaShoppingCart className="hover:text-primary transition-all cursor-pointer" />
+            <span>
+              <FaShoppingCart className="hover:text-primary transition-all cursor-pointer" />
+            </span>
           </Link>
           <button onClick={() => setIsSearchModal(true)}>
             <FaSearch className="hover:text-primary transition-all cursor-pointer" />
           </button>
-          <a href="#" className="md:inline-block hidden cursor-pointer">
+          <a href="#" className="md:inline-block hidden sm">
             <button className="btn-primary">Order Online</button>
           </a>
           <button
             className="sm:hidden inline-block"
             onClick={() => setIsMenuModal(true)}
-          > 
-            <GiHamburgerMenu className="text-xl hover:text-primary transition-all cursor-pointer" />
+          >
+            <GiHamburgerMenu className="text-xl hover:text-primary transition-all" />
           </button>
         </div>
       </div>
