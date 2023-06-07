@@ -44,40 +44,7 @@ const Product = () => {
                 <button className="btn-primary !bg-danger">Delete</button>
               </td>
             </tr>
-            <tr className="transition-all cursor-pointer bg-secondary border-gray-700 hover:bg-primary ">
-              <td className="py-4 px-6 font-medium whitespace-nowrap hover:text-white flex items-center gap-x-1 justify-center">
-                <span>63107...</span>
-              </td>
-              <td className="py-4 px-6 font-medium whitespace-nowrap hover:text-white">
-                Adana
-              </td>
-              <td className="py-4 px-6 font-medium whitespace-nowrap hover:text-white">
-                01-09-2022
-              </td>
-              <td className="py-4 px-6 font-medium whitespace-nowrap hover:text-white">
-                $18
-              </td>
-              <td className="py-4 px-6 font-medium whitespace-nowrap hover:text-white">
-                preparing
-              </td>
-            </tr>
-            <tr className="transition-all cursor-pointer bg-secondary border-gray-700 hover:bg-primary ">
-              <td className="py-4 px-6 font-medium whitespace-nowrap hover:text-white flex items-center gap-x-1 justify-center">
-                <span>63107...</span>
-              </td>
-              <td className="py-4 px-6 font-medium whitespace-nowrap hover:text-white">
-                Adana
-              </td>
-              <td className="py-4 px-6 font-medium whitespace-nowrap hover:text-white">
-                01-09-2022
-              </td>
-              <td className="py-4 px-6 font-medium whitespace-nowrap hover:text-white">
-                $18
-              </td>
-              <td className="py-4 px-6 font-medium whitespace-nowrap hover:text-white">
-                preparing
-              </td>
-            </tr>
+        
           </tbody>
         </table>
       </div>

@@ -4,8 +4,8 @@ import Title from "../../components/ui/Title";
 
 const Index = () => {
   return (
-    <div className="flex items-center h-screen gap-20 py-20 flex-wrap ">
-      <div className="relative md:flex-1 w-[80%] h-[80%] mx-20">
+    <div className="flex items-center md:h-screen gap-5 py-20 flex-wrap ">
+      <div className="relative md:flex-1 md:w-[80%] md:h-[80%] w-36 h-36 mx-auto">
         <Image src="/images/f1.png" alt="" layout="fill" objectFit="contain" />
       </div>
       <div className="md:flex-1 md:text-start text-center">
