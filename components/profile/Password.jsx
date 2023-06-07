@@ -5,7 +5,7 @@ import { useFormik } from "formik";
 
 import { profileSchema } from "../../schema/profile";
 
-const Account = () => {
+const Password = () => {
   const onSubmit = async (values, actions) => {
     await new Promise((resolve) => setTimeout(resolve, 4000));
     actions.resetForm();
@@ -82,11 +82,11 @@ const Account = () => {
   ];
   return (
     <form className="lg:p-8 lg:mt-0 mt-5 flex-1">
-      <Title addClass="text-[40px]">Account Settings</Title>
+      <Title addClass="text-[40px]">Password</Title>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4">
         {inputs.map((input) => (
           <Input
-            key={input.id}
+            key="input.id"
             {...input}
             onBlur={handleBlur}
             onChange={handleChange}
@@ -98,4 +98,4 @@ const Account = () => {
   );
 };
 
-export default Account;
+export default Password;
