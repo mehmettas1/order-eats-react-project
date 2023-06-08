@@ -23,8 +23,7 @@ const MenuWrapper = () => {
         <MenuItem />
         <MenuItem />
         <MenuItem />
-        <MenuItem />
-            </div>
+       </div>
     </div>
   );
 };
